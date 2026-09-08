@@ -1,1 +1,0 @@
-This is a document for Week 1.
