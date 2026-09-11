@@ -29,6 +29,7 @@ def add_pairs(a):
             print(a[left])
 
 def binary_search(a, target):
+    answer = "not found"
     val1 = 0
     val2 = len(a)
 
@@ -40,12 +41,15 @@ def binary_search(a, target):
         elif a[mid] < target:
             val1 = mid
         else:
-            print("found")
+            answer = "found"
+            break
+
+    print(answer)
 
 
 
 # this is to test the search function
 a = [1, 3, 5, 7, 11, 15, 23]
-target = 7
+target = 3
 
 binary_search(a, target)
