@@ -11,8 +11,6 @@ Reliable sources of data:
 
 Use [StatCalcPro](https://statcalc.pro/) to compare datasets and find the originality of the dataset.
 
-<br>
-
 ## Investigation
 
 There are multiple categories of metadata that need to be analysed for a trusted dataset:
@@ -38,3 +36,11 @@ Risk Mitigation:
 * Count of data (a data source might have more records to another dataset that is being compared)
 * Version control
 
+<br>
+
+Licence information:
+* Copyright
+* Rights
+* Cost
+* Public use
+* Commercial use
