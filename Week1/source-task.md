@@ -52,15 +52,24 @@ For each dataset, your written report should cover:
 	
 * The potential risks associated with using the data
 	* **_Consider issues such as outdated information, incomplete records, inconsistent reporting methods, or bias._**
-	1. The date published it from mid-2026 so the dataset is up-to-date.
- 	2. A quick check was done on both datasets and had no incomplete records, due to this being a verified government source.
-  	3. A quick check was done on both datasets and had no inconsistent reporting methods, due to this being a verified government source.
+	* Source 1 highlighted issues:
+		1. Uncertainty measures due to dependence on other values being correct
+  		2. Scaling factors
+    	3. Census uncertainty
+    	4. Rounding
+  	* Source 2 highlighted issues:
+  	  	1. Age 90 is used for those 90 and over
+  	  	2. Use of 2023 local authorities
+  	  	3. Accuracy of estimates and rounding
+  	  	4. Geographical coverage only covers England and Wales
 
 * How the potential risks can be mitigated
 	* **_Explain methods for validating, cleaning, updating, or cross-referencing the data._**
 
 * A consideration of any relevant regulatory guidelines and legal requirements related to the use of the data
 	* **_Consider data protection legislation, ethical requirements, data licensing agreements, and open data policies._**
+	* ONS uses the OGL v3.0
+ 		* 
 
 * The readiness of the data for analysis and any further preparation techniques required to make the data ready for processing
 	* **_Evaluate data quality, completeness, formatting, missing values, standardisation requirements, and transformation needs._**
