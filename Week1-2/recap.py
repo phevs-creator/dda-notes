@@ -1,5 +1,9 @@
 # start
 
+def area_cyl(r, h):
+    area = (2*3.14*r*h) + (2*3.14*(r**2))
+    return area
+
 def search(a, target):
     # alternate solution - cuts down time by removing flag
     # ans = "Not Found"
@@ -21,35 +25,41 @@ def add_pairs(a):
     right = len(a)-1
 
     while left < right:
-        print(a[left] + a[right])
         left = left + 1
         right = right - 1
 
         if a[left] == a[right]:
             print(a[left])
 
-def binary_search(a, target):
-    answer = "not found"
-    val1 = 0
-    val2 = len(a)
+def middle(val1, val2):
+    mid = (val2+val1)//2
+    return mid
 
-    for num in a:
-        mid = (val2+val1)//2
+def binary_search(nums, target):
+    left = 0
+    right = len(nums)-1
+    mid = 1
 
-        if a[mid] > target:
-            val2 = mid
-        elif a[mid] < target:
-            val1 = mid
-        else:
-            answer = "found"
+    ans = -1
+
+    while left <= right:
+        mid = (right + left)//2
+
+        if nums[mid] == target:
+            ans = mid
             break
-
-    print(answer)
-
+        elif nums[mid] > target:
+            right = mid - 1
+        elif nums[mid] < target:
+            left = mid + 1
+    
+    return ans
 
 
 # this is to test the search function
-a = [1, 3, 5, 7, 11, 15, 23]
-target = 3
+# w = [1, 3, 5, 7, 8, 10, 11, 15, 23, 54, 101, 102]
+a = [-1,0,3,5,9,12]
+target = 9
 
-binary_search(a, target)
+# print(binary_search(a, target))
+print(binary_search(a, target))
