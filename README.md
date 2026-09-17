@@ -5,9 +5,10 @@ Content:
 * Task 1 takes 20 hours and has three subsections
   - A - Research + Report
   - B - Visualisation
-  - C -
-* Task 2 takes 15 hours
-* Task 3 takes 12.5 hours
+  - C - Data Dictionary
+* Task 2 (Dashboard Creation) takes 15 hours
+* Task 3 (Evaluation) takes 12.5 hours
+
 <br>
 
 ## Exam Dates
