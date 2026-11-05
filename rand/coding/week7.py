@@ -27,4 +27,16 @@ n = len(l)
     
 #     l[j + 1] = key
 
-print(l)
+# print(l)
+
+
+# -- task --
+a = ["Bikram", "Josh", "Vitor", "Helloss"]
+n = len(a)
+
+for i in range(n):
+    for j in range(i + 1, n):
+        if len(a[i]) > len(a[j]):
+            a[i], a[j] = a[j], a[i]
+
+print(a)
