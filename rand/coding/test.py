@@ -1,6 +1,13 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
-df = pd.read_csv('Week3-4\coding\students.csv')
+df = pd.read_csv('rand\coding\students.csv')
+ex = df[df["Score"] > 80]["Course"].value_counts()
+
+ex.plot(kind="bar")
+plt.show()
+
+print(ex)
 
 __quit__ = True
 
