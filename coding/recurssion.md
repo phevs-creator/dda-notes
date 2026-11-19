@@ -1,4 +1,5 @@
 # Recursion
+## Work 1
 
 <p>This is an explanation of the recursion algorithm found below.</p>
 
@@ -54,3 +55,66 @@ my_func(5) = 5 * my_func(4) = 120
 ```
 
 The past results keep getting used int he next results.
+
+## Work 2
+
+<p>The next formula is as follows:</p>
+
+```
+def my_func(n):
+    if n == 0:
+        return
+    print(n)
+    my_func(n-1)
+```
+
+<p>The n and results will be as follows.</p>
+
+```
+my_func(4) = 4
+my_func(3) = 3
+my_func(2) = 2
+my_func(1) = 1
+```
+
+## Work 3
+
+```
+def my_func(n):
+    if n == 0:
+        return
+    print(n)
+    my_func(n-1)
+    print(n)
+```
+
+<p>The n and results are as follows.</p>
+
+```
+my_func(4) = 4, my_func(3), n
+my_func(3) = 3, my_func(2), n
+my_func(2) = 2, my_func(1), n
+my_func(1) = 1, my_func(0), n
+```
+
+<p>This round two where we go back and get the ns from the last function.</p>
+
+```
+my_func(1) = n = 1
+my_func(2) = n = 2
+my_func(3) = n = 3
+my_func(4) = n = 4
+```
+
+<p>The result of this will look like...</p>
+
+```
+4
+3
+2
+1
+1
+2
+3
+4
+```

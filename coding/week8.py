@@ -29,4 +29,4 @@ def cu(n):
         return 1
     return n * cu(n-1)
 
-print(cu(23))
+# print(cu(23))
